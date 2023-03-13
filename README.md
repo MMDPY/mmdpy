@@ -46,18 +46,12 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 
 
 ![](https://img.shields.io/badge/Package-Tensorflow-informational?style=flat&logo=Tensorflow&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Code-SQL-informational?style=flat&logo=Sql&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/NLP-NLTK-informational?style=flat&logo=NLTK&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Package-Pytorch-informational?style=flat&logo=Pytorch&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/Package-Keras-informational?style=flat&logo=Keras&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Package-Pytorch-informational?style=flat&logo=Pytorch&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Package-HuggingFace-informational?style=flat&logo=HuggingFace&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Package-NLTK-informational?style=flat&logo=NLTK&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/Package-Sklearn-informational?style=flat&logo=Sklearn&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Package-Numpy-informational?style=flat&logo=Numpy&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Package-Scipy-informational?style=flat&logo=Scipy&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Package-Pandas-informational?style=flat&logo=Pandas&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Tools-Azure-informational?style=flat&logo=Azure&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Tools-Linux-informational?style=flat&logo=Linux&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=Git&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Database-MySQL-informational?style=flat&logo=MySQL&logoColor=white&color=4AB197)
+
 ![](https://img.shields.io/badge/Visualization-Tableau-informational?style=flat&logo=Tableau&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Visualization-Powerbi-informational?style=flat&logo=Tableau&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Visualization-Streamlit-informational?style=flat&logo=Streamlit&logoColor=white&color=4AB197)
 
