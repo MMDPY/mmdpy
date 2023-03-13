@@ -24,7 +24,7 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
   <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Date-Recognition-with-Regular-Expressions&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
 <a href="https://github.com/MMDPY/Language-Identification">
-  <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Language-Identification-mapping&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
+  <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Language-Identification&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
 <a href="https://github.com/MMDPY/Grammar-Checker">
   <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Grammar-Checker&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
