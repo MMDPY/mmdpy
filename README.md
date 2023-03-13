@@ -35,13 +35,6 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 </a>
 
 
-## &#x1f4c8; GitHub Stats
-
-<a href="https://github.com/zamaniali1995">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=mmdpy&show_icons=true&theme=radical&count_private=true" alt="Mohammad's GitHub Stats" />
-</a>
-
-
 ## 💼 Skills
 
 
