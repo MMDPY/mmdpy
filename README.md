@@ -42,7 +42,9 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=C&logoColor=white&color=4AB197)
-![](https://img.shields.io/badge/Code-C-informational?style=flat&logo=C&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Package-HugingFace-informational?style=flat&logo=HuggingFace&logoColor=white&color=4AB197)
+
+
 ![](https://img.shields.io/badge/Package-Tensorflow-informational?style=flat&logo=Tensorflow&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/Code-SQL-informational?style=flat&logo=Sql&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/NLP-NLTK-informational?style=flat&logo=NLTK&logoColor=white&color=4AB197)
