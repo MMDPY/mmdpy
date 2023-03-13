@@ -29,15 +29,12 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 <a href="https://github.com/MMDPY/Grammar-Checker">
   <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Grammar-Checker&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
-<a href="https://github.com/MMDPY/Grammar-Checker">
-  <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/pin/?username=mmdpy&repo=Grammar-Checker&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
+<a href="https://github.com/MMDPY/POS-tagging">
+  <img align="center" style="margin:0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=mmdpy&repo=POS-taggingtitle_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
 </a>
 
 ## &#x1f4c8; GitHub Stats
 
-<a href="https://github.com/MMDPY/POS-tagging">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=mmdpy&repo=POS-taggingtitle_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
-</a>
 
 ## 💼 Skills
 
