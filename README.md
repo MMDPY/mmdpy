@@ -5,7 +5,7 @@
 
 Hey there 👋
 
-I’m Mohammad, a data scientist and machine learning developer. I am actively looking for data science and machine learning developer roles. Feel free to reach out to me if you have any openings.
+I’m Mohammad, a data scientist and machine learning developer. I am actively looking for data science and machine learning developer roles. Feel free to reach out if you have any openings.
 
 Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 
@@ -54,4 +54,5 @@ Want to know more about me? [Check out my portfolio.](https://mmdpy.github.io/)
 
 ![](https://img.shields.io/badge/Visualization-Tableau-informational?style=flat&logo=Tableau&logoColor=white&color=4AB197)
 ![](https://img.shields.io/badge/Visualization-Streamlit-informational?style=flat&logo=Streamlit&logoColor=white&color=4AB197)
+![](https://img.shields.io/badge/Visualization-PowerBI-informational?style=flat&logo=PowerBI&logoColor=white&color=4AB197)
 
