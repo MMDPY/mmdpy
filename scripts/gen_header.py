@@ -12,7 +12,7 @@ f400 = base64.b64encode((font_dir / "plex400.woff2").read_bytes()).decode()
 f600 = base64.b64encode((font_dir / "plex600.woff2").read_bytes()).decode()
 
 W, H = 1200, 436
-BG, FG, HI, DIM, RULE, INK = "#0e0e0d", "#d9d5ca", "#f4f1e8", "#7d796f", "#2a2926", "#ff6a3d"
+BG, FG, HI, DIM, RULE, INK = "#0e0e0d", "#d9d5ca", "#f4f1e8", "#7d796f", "#2a2926", "#8fd16a"
 X0, X1 = 48, W - 48
 
 stats = [
@@ -51,7 +51,7 @@ svg.append(f'<text x="{X0}" y="374" font-size="20"><tspan fill="{INK}">mmdpy</ts
 svg.append(f'<rect class="cur" x="{X0 + 9 * 12:.0f}" y="357" width="12" height="22" fill="{FG}"/>')
 
 bar_y = H - 34
-svg.append(f'<rect x="0" y="{bar_y}" width="{W}" height="34" fill="{FG}"/>')
+svg.append(f'<rect x="0" y="{bar_y}" width="{W}" height="34" fill="{INK}"/>')
 x = X0
 cw = 9.6
 parts = [("[mmdpy]", True, False)] + [(t, False, i == 0) for i, t in enumerate(tabs)]
@@ -60,7 +60,7 @@ for label, bold, on in parts:
     if on:
         svg.append(f'<rect x="{x - cw:.1f}" y="{bar_y}" width="{w:.1f}" height="34" fill="{BG}"/>')
     weight = ' font-weight="600"' if bold else ""
-    svg.append(f'<text x="{x:.1f}" y="{bar_y + 23}" font-size="16"{weight} fill="{FG if on else BG}">{label}</text>')
+    svg.append(f'<text x="{x:.1f}" y="{bar_y + 23}" font-size="16"{weight} fill="{INK if on else BG}">{label}</text>')
     x += w
 svg.append(f'<text x="{X1}" y="{bar_y + 23}" font-size="16" fill="{BG}" text-anchor="end">mmdpy.github.io</text>')
 svg.append("</svg>")

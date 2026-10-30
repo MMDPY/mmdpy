@@ -14,20 +14,20 @@ text { font-family: P, ui-monospace, Menlo, Consolas, monospace; }
 <text font-size="19" fill="#d9d5ca" text-anchor="end"><tspan x="1152" y="128">a voice agent that answers</tspan><tspan x="1152" y="155">compliance investigators</tspan><tspan x="1152" y="182">in under a second.</tspan></text>
 <line x1="48" x2="1152" y1="226" y2="226" stroke="#2a2926"/>
 
-<text x="48" y="292" font-size="44" font-weight="600" fill="#ff6a3d">20M+</text>
+<text x="48" y="292" font-size="44" font-weight="600" fill="#8fd16a">20M+</text>
 <text x="48" y="324" font-size="18" fill="#7d796f">messages a day</text>
-<text x="324" y="292" font-size="44" font-weight="600" fill="#ff6a3d">&lt; 1 s</text>
+<text x="324" y="292" font-size="44" font-weight="600" fill="#8fd16a">&lt; 1 s</text>
 <text x="324" y="324" font-size="18" fill="#7d796f">speech-to-speech</text>
-<text x="600" y="292" font-size="44" font-weight="600" fill="#ff6a3d">10–122x</text>
+<text x="600" y="292" font-size="44" font-weight="600" fill="#8fd16a">10–122x</text>
 <text x="600" y="324" font-size="18" fill="#7d796f">cheaper than AWS</text>
-<text x="876" y="292" font-size="44" font-weight="600" fill="#ff6a3d">94%</text>
+<text x="876" y="292" font-size="44" font-weight="600" fill="#8fd16a">94%</text>
 <text x="876" y="324" font-size="18" fill="#7d796f">recall@5, email archive</text>
-<text x="48" y="374" font-size="20"><tspan fill="#ff6a3d">mmdpy</tspan><tspan fill="#d9d5ca">:~$ </tspan></text>
+<text x="48" y="374" font-size="20"><tspan fill="#8fd16a">mmdpy</tspan><tspan fill="#d9d5ca">:~$ </tspan></text>
 <rect class="cur" x="156" y="357" width="12" height="22" fill="#d9d5ca"/>
-<rect x="0" y="402" width="1200" height="34" fill="#d9d5ca"/>
+<rect x="0" y="402" width="1200" height="34" fill="#8fd16a"/>
 <text x="48.0" y="425" font-size="16" font-weight="600" fill="#0e0e0d">[mmdpy]</text>
 <rect x="124.8" y="402" width="67.2" height="34" fill="#0e0e0d"/>
-<text x="134.4" y="425" font-size="16" fill="#d9d5ca">0:man</text>
+<text x="134.4" y="425" font-size="16" fill="#8fd16a">0:man</text>
 <text x="201.6" y="425" font-size="16" fill="#0e0e0d">1:work</text>
 <text x="278.4" y="425" font-size="16" fill="#0e0e0d">2:systems</text>
 <text x="384.0" y="425" font-size="16" fill="#0e0e0d">3:oss</text>
