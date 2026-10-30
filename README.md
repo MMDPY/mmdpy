@@ -1,53 +1,25 @@
-```text
-MMDPY(1)                    General Commands Manual                    MMDPY(1)
+<a href="https://mmdpy.github.io/"><img src="./assets/header.svg" alt="Mohammad Karimi, Staff AI Engineer at Proofpoint. 20M+ messages a day, sub-second speech-to-speech, 10 to 122x cheaper than AWS, 94% recall@5." width="100%" /></a>
 
-NAME
-       mmdpy - Mohammad Karimi, Staff AI Engineer at Proofpoint (Toronto)
+I build AI systems that have to work on a Tuesday at 3am, not just in a demo. Right now that's a voice agent for compliance investigators, search over millions of archived emails, and the open-weight LLM serving stack under all of it. Most of the job is making that cheap enough to run.
 
-DESCRIPTION
-       I build AI systems that have to work on a Tuesday at 3am, not just in
-       a demo. Right now that's a voice agent that answers compliance
-       investigators in under a second, search over millions of archived
-       emails, and the open-weight LLM serving stack under all of it, which
-       handles 20M+ messages a day.
+**[mmdpy.github.io](https://mmdpy.github.io/)** &nbsp;·&nbsp; [resume.pdf](https://mmdpy.github.io/assets/resume/MohammadKarimi_Resume.pdf) &nbsp;·&nbsp; [linkedin](https://www.linkedin.com/in/mohammad-karimi-abdolmaleki/) &nbsp;·&nbsp; [email](mailto:mmdkarimi96@gmail.com) &nbsp;·&nbsp; [paper](https://doi.org/10.1007/s40593-025-00468-8)
 
-       Most of my work is making these things cheap enough to run. Serving
-       our own models has come out 10x to 122x cheaper than the managed AWS
-       equivalents.
+<br>
 
-       Before Proofpoint: KPMG Lighthouse, AltaML, NLP research at the
-       University of Alberta (M.Sc. CS), Iranian national robotics team.
-       12+ years in.
+**Built at Proofpoint** <sub>&nbsp; code is proprietary, numbers are real</sub>
 
-SEE ALSO
-       mmdpy.github.io, resume.pdf, linkedin, email
-```
+| | |
+|:--|:--|
+| **voice investigator**<br><sub>&lt; 1 s</sub> | Speech-to-speech multi-agent system. One context layer over knowledge graphs, entity resolution and parallel LLM subagents. |
+| **Automate**<br><sub>20M+ messages/day</sub> | Architecture, deployment and scaling of Proofpoint's ML and LLM services across enterprise customers. |
+| **agentic decisioning**<br><sub>~15x cheaper than Bedrock</sub> | Classical ML filters, then tool-calling LLMs, then human-in-the-loop active learning. |
+| **hybrid RAG**<br><sub>94% recall@5</sub> | Petabyte-scale search over archived email. Dense + BM25 + cross-encoder re-ranker, latency down 65%. |
+| **distilled compliance LLM**<br><sub>10x cheaper</sub> | Frontier reasoning distilled into a QLoRA-tuned open-weight model that beat commercial baselines on golden evals. |
+| **LLM serving**<br><sub>10x cheaper than Bedrock</sub> | 20+ open-weight models on Kubernetes with vLLM, AWQ, KV caching and continuous batching. |
+| **PII redaction**<br><sub>122x cheaper than Guardrails</sub> | BERT + rules. |
 
-[mmdpy.github.io](https://mmdpy.github.io/) (the interactive one) &nbsp;/&nbsp; [resume.pdf](https://mmdpy.github.io/assets/resume/MohammadKarimi_Resume.pdf) &nbsp;/&nbsp; [linkedin](https://www.linkedin.com/in/mohammad-karimi-abdolmaleki/) &nbsp;/&nbsp; [mmdkarimi96@gmail.com](mailto:mmdkarimi96@gmail.com) &nbsp;/&nbsp; [paper](https://doi.org/10.1007/s40593-025-00468-8)
+**Before that** &nbsp; KPMG Lighthouse (Prudential, Bell) · AltaML (Government of Alberta) · NLP research at the University of Alberta, M.Sc. · Iranian national robotics team
 
-#### things I built at Proofpoint
+**Older, public** &nbsp; [commonsense validation](https://github.com/MMDPY/Commonsense-Validation-and-Explanation) (SemEval 2020) · [words in the brain](https://github.com/MMDPY/Neural-Representation-of-Words-within-Phrases) (MEG) · [BERT reviews](https://github.com/MMDPY/bert_fine_tuning_review_analysis) · [booking prediction](https://github.com/MMDPY/booking_probability_prediction) · [relation extraction](https://github.com/MMDPY/Relation-Extraction-and-Classification) · [language ID](https://github.com/MMDPY/Language-Identification)
 
-<sub>code is proprietary, numbers are real.</sub>
-
-| | | |
-|:--|:--|:--|
-| `voice-investigator` | **< 1 s** | speech-to-speech multi-agent system for Compliance Investigator. One context layer over knowledge graphs, entity resolution and parallel LLM subagents |
-| `automate` | **20M+ msg/day** | architecture, deployment and scaling of Proofpoint Automate ML + LLM services across enterprise customers |
-| `agentic-decisioning` | **~15x cheaper** | classical ML filters, then tool-calling LLMs, then human-in-the-loop active learning (vs. AWS Bedrock) |
-| `hybrid-rag` | **94% recall@5** | petabyte-scale search over archived email. dense + BM25 + cross-encoder re-ranker, search latency down 65% |
-| `distilled-compliance-llm` | **10x cheaper** | frontier reasoning distilled into a QLoRA-tuned open-weight model that beat commercial baselines on golden evals |
-| `llm-serving` | **10x cheaper** | 20+ open-weight models on Kubernetes. vLLM, AWQ, KV caching, continuous batching |
-| `pii-redaction` | **122x cheaper** | BERT + rules, vs. AWS Guardrails |
-
-#### older, public
-
-- [Commonsense-Validation-and-Explanation](https://github.com/MMDPY/Commonsense-Validation-and-Explanation): SemEval 2020 task 4, tell sense from nonsense and explain why
-- [Neural-Representation-of-Words-within-Phrases](https://github.com/MMDPY/Neural-Representation-of-Words-within-Phrases): how adjectives and nouns compose in the brain, from MEG
-- [bert_fine_tuning_review_analysis](https://github.com/MMDPY/bert_fine_tuning_review_analysis): fine-tuning BERT on reviews
-- [booking_probability_prediction](https://github.com/MMDPY/booking_probability_prediction): will this hotel get booked, from search sessions
-- [Relation-Extraction-and-Classification](https://github.com/MMDPY/Relation-Extraction-and-Classification): naive bayes relation extraction, no libraries
-- [Language-Identification](https://github.com/MMDPY/Language-Identification): language ID with character n-gram models
-
-#### stack
-
-Python, PyTorch, Hugging Face, vLLM, LangChain, DSPy, Unsloth, Kubernetes, Docker, AWS, GCP (Vertex AI, BigQuery), Azure, Airflow, PostgreSQL. Certified GCP Professional ML Engineer and Azure AI Engineer.
+**Stack** &nbsp; Python, PyTorch, Hugging Face, vLLM, LangChain, DSPy, Unsloth, Kubernetes, AWS, GCP, Azure, Airflow. GCP Professional ML Engineer, Azure AI Engineer.
