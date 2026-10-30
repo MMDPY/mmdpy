@@ -1,5 +1,5 @@
 <a href="https://mmdpy.github.io/">
-  <img src="./assets/terminal.svg" alt="mmdpy — Staff AI Engineer @ Proofpoint. Sub-second speech-to-speech agent, 20M+ messages/day, 10–122× cheaper inference." width="100%" />
+  <img src="./assets/banner.svg" alt="mmdpy — Staff AI Engineer @ Proofpoint. Sub-second speech-to-speech agent, 20M+ messages/day, 10–122× cheaper inference." width="100%" />
 </a>
 
 <p align="center">

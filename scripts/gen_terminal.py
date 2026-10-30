@@ -1,4 +1,4 @@
-"""Builds assets/terminal.svg — the animated terminal banner at the top of the profile README.
+"""Builds assets/banner.svg — the animated terminal banner at the top of the profile README.
 
 Needs assets/_photo360.jpg (a 360×360 copy of the profile photo); it gets embedded as base64.
 """
@@ -135,6 +135,6 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <rect x=".5" y="41" width="{W - 1}" height="{H - 42}" rx="14" fill="url(#scan)" pointer-events="none"/>
 </svg>'''
 
-with open("assets/terminal.svg", "w") as f:
+with open("assets/banner.svg", "w") as f:
     f.write(svg)
-print(f"wrote assets/terminal.svg · {len(svg) // 1024} KB · animation {t:.1f}s · last text y={y - LH}")
+print(f"wrote assets/banner.svg · {len(svg) // 1024} KB · animation {t:.1f}s · last text y={y - LH}")
