@@ -1,5 +1,5 @@
 <a href="https://mmdpy.github.io/">
-  <img src="./assets/banner.svg" alt="mmdpy — Staff AI Engineer @ Proofpoint. Sub-second speech-to-speech agent, 20M+ messages/day, 10–122× cheaper inference." width="100%" />
+  <img src="./assets/banner-v3.svg" alt="mmdpy — Staff AI Engineer @ Proofpoint. Sub-second speech-to-speech agent, 20M+ messages/day, 10–122× cheaper inference." width="100%" />
 </a>
 
 <p align="center">
@@ -20,14 +20,14 @@ cheaper than managed AWS services.
 
 ### `❯ ls ~/systems` <sub>— in production at Proofpoint (descriptions only; code is proprietary)</sub>
 
-| system | what it does | number |
-|:--|:--|--:|
-| **`voice-investigator`** | Speech-to-speech multi-agent system for Compliance Investigator: unified context layer over knowledge graphs, entity resolution, and parallel LLM subagents | **< 1 s** |
-| **`automate-inference`** | Proofpoint Automate's LLM inference platform: 20+ open-weight models on Kubernetes · vLLM · AWQ · prefix/KV caching · continuous batching, 10–15× cheaper than Bedrock | **20M+ msgs/day** |
-| **`agentic-decisioning`** | Cascade for Supervision: classical ML filters → tool-calling LLMs → human-in-the-loop active learning | **−45% false positives** |
-| **`hybrid-rag`** | Petabyte-scale search over millions of archived emails: dense embeddings + BM25 + cross-encoder re-ranker, −65% query latency | **94% recall@5** |
-| **`distilled-compliance-llm`** | Frontier-model reasoning distilled into a QLoRA-tuned open-weight LLM; +40% AWS Nova F1 via function calling + DSPy/GEPA | **beats commercial baselines** |
-| **`redaction-api`** | Hybrid BERT PII redaction, alongside Longformer classification (90%+ F1) with Integrated Gradients | **122× cheaper** |
+| system | what it does |
+|:--|:--|
+| **voice‑investigator**<br><sub>&lt; 1 s</sub> | Speech-to-speech multi-agent system for Compliance Investigator: unified context layer over knowledge graphs, entity resolution, and parallel LLM subagents |
+| **automate‑inference**<br><sub>20M+ msgs/day</sub> | Proofpoint Automate's LLM inference platform: 20+ open-weight models on Kubernetes · vLLM · AWQ · prefix/KV caching · continuous batching — 10–15× cheaper than Bedrock |
+| **agentic‑decisioning**<br><sub>−45% false positives</sub> | Cascade for Supervision: classical ML filters → tool-calling LLMs → human-in-the-loop active learning |
+| **hybrid‑rag**<br><sub>94% recall@5</sub> | Petabyte-scale search over millions of archived emails: dense embeddings + BM25 + cross-encoder re-ranker, −65% query latency |
+| **distilled‑compliance‑llm**<br><sub>beats commercial baselines</sub> | Frontier-model reasoning distilled into a QLoRA-tuned open-weight LLM; +40% AWS Nova F1 via function calling + DSPy/GEPA |
+| **redaction‑api**<br><sub>122× cheaper</sub> | Hybrid BERT PII redaction vs. AWS Guardrails, alongside Longformer classification (90%+ F1) with Integrated Gradients |
 
 ### `❯ ls ~/oss`
 

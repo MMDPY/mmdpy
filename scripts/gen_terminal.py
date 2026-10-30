@@ -1,17 +1,14 @@
-"""Builds assets/banner.svg — the animated terminal banner at the top of the profile README.
+"""Builds assets/banner-v3.svg — the animated terminal banner at the top of the profile README.
 
-Needs assets/_photo360.jpg (a 360×360 copy of the profile photo); it gets embedded as base64.
 """
-import base64
 from html import escape
 
-W, H = 1000, 360
+W, H = 880, 360
 PANEL, LINE = "#0c1016", "#1a212b"
 CW = 8.45
 G, B, Y, D, F, WH, HOT = "#3ddc97", "#5fb3ff", "#ffb454", "#6b7684", "#c9d1d9", "#ffffff", "#ff8a3d"
 
-PX, PY, PW, PH = 28, 62, 252, 270          # photo frame
-X0, Y0, LH = PX + PW + 36, 80, 22         # terminal text column
+X0, Y0, LH = 28, 80, 22                   # terminal text column
 
 script = [
     ("cmd", "whoami"),
@@ -35,7 +32,7 @@ PROMPT = f'<tspan fill="{G}" font-weight="700">mmdpy</tspan><tspan fill="{B}">&#
 PLEN = len("mmdpy ~ ❯ ")
 
 defs, body = [], []
-t, y = 1.1, Y0
+t, y = 0.4, Y0
 last = None
 for i, step in enumerate(script):
     kind = step[0]
@@ -65,44 +62,6 @@ for i, step in enumerate(script):
 cx, cy, ct = last
 body.append(f'<g class="o" style="animation-delay:{ct:.2f}s"><rect class="cur" x="{cx:.1f}" y="{cy - 14}" width="8" height="17" fill="{G}"/></g>')
 
-# --- photo: LED-matrix look via a dot-grid mask, with a vignette and a scan-in reveal ---
-photo_b64 = base64.b64encode(open("assets/_photo360.jpg", "rb").read()).decode()
-crop_x, crop_y, crop_w = 38.0, 6.0, 284.0          # face crop inside the 360px image
-scale = PW / crop_w
-img_size = 360 * scale
-img_x, img_y = PX - crop_x * scale, PY - crop_y * scale
-CELL = 6
-photo = f'''
-  <pattern id="led" x="{PX}" y="{PY}" width="{CELL}" height="{CELL}" patternUnits="userSpaceOnUse">
-    <rect x=".6" y=".6" width="{CELL - 1.2}" height="{CELL - 1.2}" rx="1.3" fill="#fff"/>
-  </pattern>
-  <radialGradient id="vig" cx="50%" cy="48%" r="58%">
-    <stop offset=".72" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
-  </radialGradient>
-  <mask id="ledmask" maskUnits="userSpaceOnUse" x="{PX}" y="{PY}" width="{PW}" height="{PH}">
-    <rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" fill="url(#vig)"/>
-  </mask>
-  <mask id="dots" maskUnits="userSpaceOnUse" x="{PX}" y="{PY}" width="{PW}" height="{PH}">
-    <rect x="{PX}" y="{PY}" width="{PW}" height="{PH}" fill="url(#led)"/>
-  </mask>
-  <clipPath id="scanin"><rect x="{PX}" y="{PY}" width="{PW}" height="0">
-    <animate attributeName="height" begin="0.15s" dur="0.9s" fill="freeze" values="0;{PH}" calcMode="spline" keySplines=".2 .8 .2 1"/>
-  </rect></clipPath>'''
-defs.append(photo)
-
-photo_layer = f'''
-<g clip-path="url(#scanin)">
-  <g mask="url(#ledmask)">
-    <g mask="url(#dots)">
-      <image href="data:image/jpeg;base64,{photo_b64}" x="{img_x:.1f}" y="{img_y:.1f}" width="{img_size:.1f}" height="{img_size:.1f}" style="filter:saturate(1.15) contrast(1.05)"/>
-    </g>
-  </g>
-</g>
-<rect x="{PX}" y="{PY}" width="{PW}" height="2" fill="{G}" opacity="0">
-  <animate attributeName="y" begin="0.15s" dur="0.9s" values="{PY};{PY + PH}" calcMode="spline" keySplines=".2 .8 .2 1" fill="freeze"/>
-  <animate attributeName="opacity" begin="0.15s" dur="0.9s" values="0;.9;.9;0" fill="freeze"/>
-</rect>'''
-
 css = """
 text { font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace; font-size: 14px; }
 .o { opacity: 0; animation: show .01s linear forwards; }
@@ -130,11 +89,10 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <text x="{W / 2}" y="25" fill="{D}" text-anchor="middle" style="font-size:12px">mmdpy — zsh — ~/portfolio</text>
 <circle cx="{W - 78}" cy="20.5" r="3.5" fill="{G}"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>
 <text x="{W - 68}" y="25" fill="{D}" style="font-size:12px">online</text>
-{photo_layer}
 {"".join(body)}
 <rect x=".5" y="41" width="{W - 1}" height="{H - 42}" rx="14" fill="url(#scan)" pointer-events="none"/>
 </svg>'''
 
-with open("assets/banner.svg", "w") as f:
+with open("assets/banner-v3.svg", "w") as f:
     f.write(svg)
-print(f"wrote assets/banner.svg · {len(svg) // 1024} KB · animation {t:.1f}s · last text y={y - LH}")
+print(f"wrote assets/banner-v3.svg · {len(svg) // 1024} KB · animation {t:.1f}s · last text y={y - LH}")
